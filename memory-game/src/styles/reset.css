@@ -1,0 +1,9 @@
+/*o reset css padroniza o ponto de start nos navegadores*/ 
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: monospace;
+}
