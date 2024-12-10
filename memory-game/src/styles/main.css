@@ -3,8 +3,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #fc1e8a;
+    background-image: url(/memory-game/assets/img/codigo-programacao-Ali-Shah-Lakhani-Unsplash.jpg);
     user-select: none;
+    
 }
 
 .container{
@@ -14,7 +15,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #fdeff9 100%);
+    background: linear-gradient(325deg, #03001e7f 0%,  #fd34637f 30%, #01cdfb7d 70%,  #00000081 100%);
     padding: 40px 60px; 
 } 
 
@@ -23,7 +24,6 @@ body{
 h2{
     font-size: 3rem;
     color: #ffffff;
-    text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 
@@ -31,18 +31,18 @@ h2{
     padding: 15px 20px;
     width: 100%;
     color: #000;
-    background-color: #ffffff;
+    background-color: #000000;
+    color:#ffffff;
     border: none;
     font-size: 1.5em;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     cursor: pointer; 
     font-weight: 600;
 }
 
 .reset:focus{
-    color: #ec38bc;
-    background-color: #262809;
+    color: #01CCFB;
+    background-color: #000000;
 }
 
 .game{
@@ -72,8 +72,17 @@ h2{
     content: " ";
     position: absolute;
     inset: 0;
-    background-color: #404040;
+    background-color: #000000;
     transition: 0.25s;
     transform: rotateY(0deg);
     backface-visibility: hidden;
+}
+
+.item.boxOpen{
+    transform: rotateY(0deg);
+}
+
+.boxOpen::after,
+.boxMatch::after{
+    transform: rotateY(180deg);
 }
