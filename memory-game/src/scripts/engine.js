@@ -52,7 +52,7 @@ function checkMatch(){
 
     if(document.querySelectorAll(".boxMatch").length === emojis.length){
         function newText(){
-            document.getElementsByTagName('h2').innerHTML = "voce venceu!"; 
+            document.getElementsByTagName('h2')[0].innerHTML = "const winner = 'you!'";
         }
         newText();
     };
