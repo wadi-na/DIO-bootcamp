@@ -14,9 +14,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     background: linear-gradient(325deg, #03001e7f 0%,  #fd34637f 30%, #01cdfb7d 70%,  #00000081 100%);
-    padding: 40px 60px; 
+    padding: 30px 50px; 
 } 
 
 /*css gradient generator para fazer o gradiente de cores!!*/
